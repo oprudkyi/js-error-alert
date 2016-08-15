@@ -1,6 +1,7 @@
 **oprudkyi/js_error_alert** 
-Show javascript/jQuery errors as browser alerts. simplify development and testing
-================================
+Show JavaScript/jQuery errors as browser alerts. 
+
+Simplify development and testing
 
 ## About
 
