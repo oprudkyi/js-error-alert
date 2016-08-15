@@ -1,4 +1,5 @@
-**oprudkyi/js_error_alert** Show javascript/jQuery errors as browser alerts. simplify development and testing
+**oprudkyi/js_error_alert** 
+Show javascript/jQuery errors as browser alerts. simplify development and testing
 ================================
 
 ## About
@@ -10,14 +11,16 @@
 This is very simple solution. 
 
 JS/jQuery error alerter catches JS/jQuery errors and exception and provides simple way to show them.
-simple errors are catched via window.onerror handler
-errors from jQuery (ajax, onclick etc) are hidden from window.onerror, so jQuery is patched in way to call error handler
+
+Simple errors are catched via window.onerror handler.
+
+Errors from jQuery (ajax, onclick etc) are hidden from window.onerror, so jQuery is patched in way to call error handler.
 
 jQuery hooks are based on code found at :
 
-https://github.com/rollbar/rollbar.js/blob/master/src/plugins/jquery.js
-https://gist.github.com/ndbroadbent/5097601
-https://github.com/airbrake/airbrake-js/blob/master/dist/instrumentation/jquery.js
+- https://github.com/rollbar/rollbar.js/blob/master/src/plugins/jquery.js
+- https://gist.github.com/ndbroadbent/5097601
+- https://github.com/airbrake/airbrake-js/blob/master/dist/instrumentation/jquery.js
 
 
 
@@ -57,4 +60,5 @@ to get some help to deliver tests.
 ## License
 
 JS/jQuery error alerter is licensed under [The MIT License (MIT)](LICENSE).
+
 (c) 2016 Oleksii Prudkyi <Oleksii.Prudkyi@gmail.com>
