@@ -30,7 +30,7 @@ jQuery hooks are based on code found at :
 
 ### load base script (it sets window.onerror)
 ```html
-	<script src="_error_handler.js"></script>
+	<script src="window_error_handler.js"></script>
 ```
 
 ### just after jquery core load jquery hooks 
@@ -41,7 +41,7 @@ jQuery hooks are based on code found at :
 ### Use custom handler to show errors
 
 You can create own ```showUncaughtException(message)``` function and replace default one, 
-place it a top of page as possible (before _error_handler.js)
+place it a top of page as possible (before window_error_handler.js)
 
 ```js
 var showUncaughtException = function(message) {
