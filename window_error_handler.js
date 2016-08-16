@@ -1,5 +1,6 @@
 /*
  * This file is part of js error alerter - tool to simplify catching of javascript errors
+ * https://github.com/oprudkyi/js_error_alert
  *
  * Main error handler, helps to popup errors earlier
  * place it atop of page as possible, or even embed it into page

@@ -1,17 +1,18 @@
 /*
- *  This file is part of js error alerter - tool to simplify catching of javascript errors
+ * This file is part of js error alerter - tool to simplify catching of javascript errors
+ * https://github.com/oprudkyi/js_error_alert
  *
- *  Modify jquery to catch exceptions
- *  place it atop of page as possible
+ * Modify jquery to catch exceptions
+ * place it atop of page as possible
  *  
  * 
- *  Based on :
- *		https://github.com/rollbar/rollbar.js/blob/master/src/plugins/jquery.js
- *		https://gist.github.com/ndbroadbent/5097601
- *		https://github.com/airbrake/airbrake-js/blob/master/dist/instrumentation/jquery.js
+ * Based on :
+ *	https://github.com/rollbar/rollbar.js/blob/master/src/plugins/jquery.js
+ *	https://gist.github.com/ndbroadbent/5097601
+ *	https://github.com/airbrake/airbrake-js/blob/master/dist/instrumentation/jquery.js
  *
- *  MIT licensed
- *  (c) 2016 Oleksii Prudkyi <Oleksii.Prudkyi@gmail.com>
+ * MIT licensed
+ * (c) 2016 Oleksii Prudkyi <Oleksii.Prudkyi@gmail.com>
 */
 
 (function(jQuery, window, document) {
