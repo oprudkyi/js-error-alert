@@ -9,16 +9,18 @@
  */
 
 
-/* you should have this function defined atop of your page or first js file
-var showUncaughtException = function(message) {
-	"use strict";
+// you should have this function defined atop of your page or first js file
+if(typeof showUncaughtException === "undefined") {
+	var showUncaughtException = function (message) {
+		"use strict";
 
-	if(typeof message === "undefined") {
-		return false;
-	}
-	alert(message);
-};
-*/
+		if(typeof message === "undefined") {
+			return false;
+		}
+		alert(message);
+	};
+	window.showUncaughtException = showUncaughtException;
+}
 
 window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
 	"use strict";
