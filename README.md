@@ -28,13 +28,22 @@ jQuery hooks are based on code found at :
 
 ## Installation
 
+```
+bower install js-error-alert --save
+```
+
+```
+npm install js-error-alert
+```
+
 ### load base script (it sets window.onerror)
 ```html
 	<script src="window_error_handler.js"></script>
 ```
 
-### just after jquery core load jquery hooks 
+### just after jquery core loads jquery hooks 
 ```html
+	<script src="jquery-1.11.1.min.js"></script>
 	<script src="jquery_error_handler.js"></script>
 ```
 
