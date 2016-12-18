@@ -15,12 +15,13 @@
  * (c) 2016 Oleksii Prudkyi <Oleksii.Prudkyi@gmail.com>
 */
 
+if(JSEH_enabled) {
 (function(jQuery, window, document) {
 	
 	"use strict";
 
 	var logException = function(e) {
-		showUncaughtException("Uncaught exception, check console logs for details :\n" + e.message);
+		JSEH_showUncaughtException("Uncaught exception, check console logs for details :\n" + e.message);
 		if(typeof console !== 'undefined' && typeof console.log !== 'undefined') {
 			console.log(e);
 		}
@@ -39,7 +40,7 @@
 			return;
 		}
 		
-		showUncaughtException("ajax error :\n" +
+		JSEH_showUncaughtException("ajax error :\n" +
 				(thrownError ? "thrownError : " + thrownError + "\n" : "") +
 				"status : " + status + "\n" +
 				"url : " + url + "\n" +
@@ -172,3 +173,4 @@
 		}
 	});	
 })(jQuery, window, document);
+}

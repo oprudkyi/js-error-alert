@@ -6,7 +6,7 @@ Simplify development and testing
 
 ## About
 
-- tired to check browser's console log for errors ?
+- forgot to check browser's console log for errors ?
 - got complaints from users 'I click but nothing happens' ?
 - ever teached end-users how to look at browser's console ?
 
@@ -40,11 +40,11 @@ jQuery hooks are based on code found at :
 
 ### Use custom handler to show errors
 
-You can create own ```showUncaughtException(message)``` function and replace default one, 
+You can create own ```JSEH_showUncaughtException(message)``` function and replace default one, 
 place it a top of page as possible (before window_error_handler.js)
 
 ```js
-var showUncaughtException = function(message) {
+var JSEH_showUncaughtException = function(message) {
 	"use strict";
 
 	if(typeof message === "undefined") {
@@ -53,6 +53,15 @@ var showUncaughtException = function(message) {
 	alert(message);
 };
 
+```
+
+### Enable/disable error handler
+
+In case you need dynamically enable/disable handler (by example if js merging/minifiying tools are used) you can 
+set ```JSEH_enabled``` variable to true/false. 
+
+```js
+var JSEH_enabled = false; //in blade.php =@if(env('JS_ERROR_ALERTER_ENABLED', false)) true @else false @endif ;
 ```
 
 ## Contribute
