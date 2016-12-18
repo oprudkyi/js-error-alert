@@ -1,0 +1,23 @@
+{
+  "name": "js-error-alert",
+  "homepage": "https://github.com/oprudkyi/js_error_alert",
+  "authors": [
+    "Oleksii Prudkyi <Oleksii.Prudkyi@gmail.com>"
+  ],
+  "description": "Simple way to show JavaScript/jQuery errors as browser alerts",
+  "main": "window_error_handler.js",
+  "keywords": [
+    "error",
+    "debugger",
+    "alert",
+    "development"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
