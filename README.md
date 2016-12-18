@@ -1,4 +1,4 @@
-**oprudkyi/js_error_alert** 
+**oprudkyi/js-error-alert** 
 
 Show JavaScript/jQuery errors as browser alerts. 
 

@@ -1,6 +1,6 @@
 /*
  * This file is part of js error alerter - tool to simplify catching of javascript errors
- * https://github.com/oprudkyi/js_error_alert
+ * https://github.com/oprudkyi/js-error-alert
  *
  * Modify jquery to catch exceptions
  * place it atop of page as possible
