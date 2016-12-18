@@ -1,0 +1,26 @@
+{
+  "name": "js-error-alert",
+  "version": "1.0.2",
+  "description": "Simple way to show JavaScript/jQuery errors as browser alerts",
+  "main": "window_error_handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oprudkyi/js-error-alert.git"
+  },
+  "keywords": [
+    "error",
+    "debugger",
+    "alert",
+    "development",
+    "browser"
+  ],
+  "author": "Oleksii Prudkyi <Oleksii.Prudkyi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oprudkyi/js-error-alert/issues"
+  },
+  "homepage": "https://github.com/oprudkyi/js-error-alert#readme"
+}
