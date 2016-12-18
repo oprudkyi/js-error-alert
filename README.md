@@ -1,8 +1,8 @@
 **oprudkyi/js-error-alert** 
 
-Show JavaScript/jQuery errors as browser alerts. 
+Simple way to show JavaScript/jQuery errors as browser alerts. 
 
-Simplify development and testing
+Make more easy to catch errors on development and testing
 
 ## About
 
@@ -62,6 +62,20 @@ set ```JSEH_enabled``` variable to true/false.
 
 ```js
 var JSEH_enabled = false; //in blade.php =@if(env('JS_ERROR_ALERTER_ENABLED', false)) true @else false @endif ;
+```
+
+### simple test
+
+```html
+<script>
+test_undefined_variable
+</script>
+
+<script>
+$(function() {
+	test_jquery_undefined_variable
+});
+</script>
 ```
 
 ## Contribute
