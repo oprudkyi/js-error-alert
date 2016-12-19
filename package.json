@@ -1,6 +1,6 @@
 {
   "name": "js-error-alert",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple way to show JavaScript/jQuery errors as browser alerts",
   "main": "window_error_handler.js",
   "scripts": {
