@@ -1,5 +1,9 @@
 **oprudkyi/js-error-alert** 
 
+![Bower version](https://img.shields.io/bower/v/js-error-alert.svg)
+[![npm version](https://img.shields.io/npm/v/js-error-alert.svg)](https://www.npmjs.com/package/js-error-alert)
+[![npm downloads](https://img.shields.io/npm/dt/js-error-alert.svg)](https://www.npmjs.com/package/js-error-alert)
+
 Simple way to show JavaScript/jQuery errors as browser alerts. 
 
 Make more easy to catch errors on development and testing
