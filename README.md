@@ -12,15 +12,15 @@ Make more easy to catch errors on development and testing
 
 - forgot to check browser's console log for errors ?
 - got complaints from users 'I click but nothing happens' ?
-- ever teached end-users how to look at browser's console ?
+- ever taught end-users how to look at browser's console ?
 
-This is very simple solution. 
+There is small and simple library to avoid or at least reduce possibility of such problems, specially in case if code isn't covered by tests.   
 
-JS/jQuery error alerter catches JS/jQuery errors and exception and provides simple way to show them.
+JS/jQuery error alerter catches JS/jQuery errors and exceptions and provides simple way to show them.
 
-Simple errors are catched via window.onerror handler.
+Simple errors are caught via window.onerror handler.
 
-Errors from jQuery (ajax, onclick etc) are hidden from window.onerror, so jQuery is patched in way to call error handler.
+Errors inside jQuery callbacks (ajax, onclick etc) are hidden from window.onerror(), so jQuery is patched in way to call error handler.
 
 jQuery hooks are based on code found at :
 
@@ -54,7 +54,7 @@ npm install js-error-alert
 ### Use custom handler to show errors
 
 You can create own ```JSEH_showUncaughtException(message)``` function and replace default one, 
-place it a top of page as possible (before window_error_handler.js)
+place it the top of the page (before window_error_handler.js)
 
 ```js
 var JSEH_showUncaughtException = function(message) {
@@ -70,7 +70,7 @@ var JSEH_showUncaughtException = function(message) {
 
 ### Enable/disable error handler
 
-In case you need dynamically enable/disable handler (by example if js merging/minifiying tools are used) you can 
+In case you need to dynamically enable/disable handler (by example if js merging/minifying tools are used) you can 
 set ```JSEH_enabled``` variable to true/false. 
 
 ```js
