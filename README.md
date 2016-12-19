@@ -45,7 +45,7 @@ npm install js-error-alert
 	<script src="window_error_handler.js"></script>
 ```
 
-### just after jquery core loads jquery hooks 
+### add jQuery hook just after jQuery core code  
 ```html
 	<script src="jquery-1.11.1.min.js"></script>
 	<script src="jquery_error_handler.js"></script>
