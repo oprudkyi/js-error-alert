@@ -9,13 +9,13 @@
  * (c) 2016 Oleksii Prudkyi <Oleksii.Prudkyi@gmail.com>
  */
 
-if(typeof JSEH_enabled === "undefined") {
+if(typeof window.JSEH_enabled === "undefined") {
 	window.JSEH_enabled = true;
 }
 
 // you should have this function defined atop of your page or first js file
 // or default one will be applied
-if(JSEH_enabled && typeof JSEH_showUncaughtException === "undefined") {
+if(window.JSEH_enabled && typeof window.JSEH_showUncaughtException === "undefined") {
 	var JSEH_showUncaughtException = function (message) {
 		"use strict";
 
@@ -27,7 +27,7 @@ if(JSEH_enabled && typeof JSEH_showUncaughtException === "undefined") {
 	window.JSEH_showUncaughtException = JSEH_showUncaughtException;
 }
 
-if(JSEH_enabled) {
+if(window.JSEH_enabled) {
 window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
 	"use strict";
 
@@ -35,7 +35,7 @@ window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
 		return false;
 	}
 
-	JSEH_showUncaughtException("JS Error : " + errorMsg + "\n" +
+	window.JSEH_showUncaughtException("JS Error : " + errorMsg + "\n" +
 		"line number : " + lineNumber + "\n" +
 		"column : " + column + "\n" +
 		"object : " + errorObj

@@ -15,13 +15,13 @@
  * (c) 2016 Oleksii Prudkyi <Oleksii.Prudkyi@gmail.com>
 */
 
-if(JSEH_enabled) {
+if(window.JSEH_enabled) {
 (function(jQuery, window, document) {
 	
 	"use strict";
 
 	var logException = function(e) {
-		JSEH_showUncaughtException("Uncaught exception, check console logs for details :\n" + e.message);
+		window.JSEH_showUncaughtException("Uncaught exception, check console logs for details :\n" + e.message);
 		if(typeof console !== 'undefined' && typeof console.log !== 'undefined') {
 			console.log(e);
 		}
@@ -40,7 +40,7 @@ if(JSEH_enabled) {
 			return;
 		}
 		
-		JSEH_showUncaughtException("ajax error :\n" +
+		window.JSEH_showUncaughtException("ajax error :\n" +
 				(thrownError ? "thrownError : " + thrownError + "\n" : "") +
 				"status : " + status + "\n" +
 				"url : " + url + "\n" +
